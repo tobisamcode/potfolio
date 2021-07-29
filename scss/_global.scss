@@ -20,4 +20,34 @@ body {
     line-height: 1.5;
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
+    padding: 5vh 15px;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $green-yellow;
+    z-index: -1;
+    opacity: 0.12;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+section {
+    background-color: $white-alpha-25;
+    border: 1px solid $white-alpha-40;
+    min-height: 90vh;
+    border-radius: 30px;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
 }
