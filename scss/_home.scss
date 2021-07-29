@@ -1,0 +1,13 @@
+.container {
+    background-color: red;
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        .home-text {
+            background-color: blue;
+        }
+        .home-img {
+            background-color: green
+        }
+    }
+}
