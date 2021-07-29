@@ -4,8 +4,20 @@
     list-style: none;
     box-sizing: border-box;
     text-decoration: none;
+    outline: none;
+}
+
+::before,
+ ::after {
+    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom right, $pink-light, $cyan-light);
+    font-size: 16px;
+    color: $blue-dark;
+    line-height: 1.5;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
 }
