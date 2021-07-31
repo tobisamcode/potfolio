@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +18,8 @@ body {
     background-image: linear-gradient(to bottom right, $pink-light, $cyan-light);
     font-size: 16px;
     color: $blue-dark;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
     line-height: 1.5;
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
@@ -40,14 +43,80 @@ img {
     vertical-align: middle;
 }
 
+h1,
+h2 {
+    font-weight: 600;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+}
+
 section {
     background-color: $white-alpha-25;
     border: 1px solid $white-alpha-40;
     min-height: 90vh;
     border-radius: 30px;
+    backdrop-filter: $backdrop-fliter-blur;
 }
 
 main {
     max-width: 1200px;
     margin: auto;
+}
+
+
+/* Buttons */
+
+.btn {
+    line-height: 1.5;
+    background-color: $white-alpha-25;
+    padding: 10px 28px;
+    display: inline-block;
+    border: 1px solid $white-alpha-40;
+    border-radius: 30px;
+    color: $main-color;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+    transition: color .3s ease;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 0;
+        background-color: $main-color;
+        z-index: -1;
+        transition: width .3s ease;
+    }
+    &:hover::before {
+        width: 100%;
+    }
+    &:hover {
+        color: $white;
+    }
+}
+
+// Custom Scrollbar
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $main-color;
 }
