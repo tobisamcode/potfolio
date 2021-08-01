@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +21,230 @@ body {
   background-image: linear-gradient(to bottom right, #efa2b4, #aef1ee);
   font-size: 16px;
   color: #18293c;
+  background-attachment: fixed;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
   line-height: 1.5;
   overflow-x: hidden;
   -webkit-tap-highlight-color: transparent;
+  padding: 5vh 15px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #cddc39;
+  z-index: -1;
+  opacity: 0.12;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  min-height: 90vh;
+  border-radius: 30px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container {
+  padding: 0 40px;
+  width: 100%;
+}
+.container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* Buttons */
+.btn {
+  line-height: 1.5;
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 10px 28px;
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 30px;
+  color: #e02f6b;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background-color: #e02f6b;
+  z-index: -1;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+.btn:hover::before {
+  width: 100%;
+}
+.btn:hover {
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e02f6b;
+}
+
+.home-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 120px 0;
+}
+.home-section.hidden {
+  display: none !important;
+}
+.home-section .home-text p {
+  font-size: 18px;
+}
+.home-section .home-text h1 {
+  font-size: 50px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.home-section .home-text h2 {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0 0 30px;
+}
+.home-section .home-text .btn {
+  margin: 0 15px 15px 0;
+}
+.home-section .home-img .img-box {
+  max-width: 300px;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  border: 8px solid rgba(255, 255, 255, 0.25);
+  margin: auto;
+}
+.home-section .home-img .img-box img {
+  width: 100%;
+  border-radius: 50%;
+}
+.home-section .home-text,
+.home-section .home-img {
+  width: 50%;
+  padding: 15px;
+}
+
+section.sec-padding {
+  padding: 80px 0;
+}
+section .section-title {
+  padding: 0 15px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+section .section-title h2 {
+  font-size: 40px;
+  text-transform: capitalize;
+}
+section .about-img {
+  width: 40%;
+  padding: 70px 15px;
+}
+section .about-img .img-box {
+  background-color: rgba(255, 255, 255, 0.25);
+  text-align: center;
+  max-width: 380px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  margin: auto;
+}
+section .about-img .img-box img {
+  width: 100%;
+  border-radius: 20px;
+}
+section .about-text {
+  width: 50%;
+  padding: 0 15px;
+}
+section .about-text p {
+  font-size: 15px;
+}
+section .about-text h3 {
+  text-transform: capitalize;
+  font-size: 20px;
+  margin: 20px 0;
+}
+section .about-text .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+section .about-text .skills .skill-item {
+  font-size: 10px;
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 8px 15px;
+  text-transform: capitalize;
+  margin: 0 10px 10px 0;
+  border-radius: 20px;
 }/*# sourceMappingURL=style.css.map */
