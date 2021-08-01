@@ -18,6 +18,7 @@ body {
     background-image: linear-gradient(to bottom right, $pink-light, $cyan-light);
     font-size: 16px;
     color: $blue-dark;
+    background-attachment: fixed;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     line-height: 1.5;
@@ -66,6 +67,19 @@ section {
 main {
     max-width: 1200px;
     margin: auto;
+}
+
+.container {
+    padding: 0 40px;
+    width: 100%;
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.align-items-center {
+    align-items: center;
 }
 
 
