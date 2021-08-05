@@ -52,5 +52,38 @@ section {
                 border-radius: 20px;
             }
         }
+        .about-tabs {
+            .tab-item {
+                padding: 2px 0;
+                background-color: transparent;
+                border: none;
+                text-transform: capitalize;
+                display: inline-block;
+                color: $blue-dark;
+                font-size: 20px;
+                cursor: pointer;
+                font-weight: 500;
+                margin: 0 30px 0 0;
+                position: relative;
+                opacity: .6;
+                transition: ease-in-out .3 ease;
+                &:last-child {
+                    margin: 0;
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 0;
+                    height: 1px;
+                    left: 0;
+                    bottom: 0;
+                    background-color: $blue-dark;
+                    transition: width .3s ease;
+                }
+                &:hover::before {
+                    width: 100%;
+                }
+            }
+        }
     }
 }
