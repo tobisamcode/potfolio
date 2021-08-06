@@ -92,6 +92,14 @@ main {
 }
 
 /* Buttons */
+button {
+  font-family: inherit;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 .btn {
   line-height: 1.5;
   background-color: rgba(255, 255, 255, 0.25);
@@ -247,4 +255,37 @@ section .about-text .skills .skill-item {
   text-transform: capitalize;
   margin: 0 10px 10px 0;
   border-radius: 20px;
+}
+section .about-text .about-tabs .tab-item {
+  padding: 2px 0;
+  background-color: transparent;
+  border: none;
+  text-transform: capitalize;
+  display: inline-block;
+  color: #18293c;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  margin: 0 30px 0 0;
+  position: relative;
+  opacity: 0.6;
+  -webkit-transition: ease-in-out 0.3 ease;
+  transition: ease-in-out 0.3 ease;
+}
+section .about-text .about-tabs .tab-item:last-child {
+  margin: 0;
+}
+section .about-text .about-tabs .tab-item::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background-color: #18293c;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+section .about-text .about-tabs .tab-item:hover::before {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
