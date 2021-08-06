@@ -85,6 +85,11 @@ main {
 
 /* Buttons */
 
+button {
+    font-family: inherit;
+    user-select: none;
+}
+
 .btn {
     line-height: 1.5;
     background-color: $white-alpha-25;
