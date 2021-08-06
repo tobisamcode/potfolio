@@ -279,7 +279,7 @@ section .about-text .about-tabs .tab-item::before {
   content: "";
   position: absolute;
   width: 0;
-  height: 1px;
+  height: 3px;
   left: 0;
   bottom: 0;
   background-color: #18293c;
