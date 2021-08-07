@@ -64,3 +64,8 @@ window.onload = () => {
     writeIntro1()
 }
 window.onload = window.onload.extend(writeAbout1())
+
+$(document.function() {
+
+
+})
