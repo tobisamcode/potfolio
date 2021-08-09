@@ -93,6 +93,52 @@ section {
                     }
                 }
             }
+            .tab-content {
+                padding: 40px 0;
+                .timeline {
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        height: 100%;
+                        width: 1px;
+                        top: 0;
+                        left: 5px;
+                        background-color: $main-color;
+                    }
+                    .timeline-item {
+                        margin-bottom: 30px;
+                        position: relative;
+                        padding: 10px 0 0 40px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            height: 11px;
+                            width: 11px;
+                            background-color: $main-color;
+                            border-radius: 50%;
+                            left: 0;
+                        }
+                        .date {
+                            display: block;
+                            color: $main-color;
+                            font-weight: 400;
+                            margin: 0 0 10px;
+                        }
+                        h4 {
+                            font-size: 18px;
+                            text-transform: capitalize;
+                            margin: 0 0 10px;
+                            span {
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

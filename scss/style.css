@@ -297,4 +297,50 @@ section .about-text .about-tabs .tab-item.active {
 section .about-text .about-tabs .tab-item.active::before {
   width: 100%;
   background-color: #e02f6b;
+}
+section .about-text .about-tabs .tab-content {
+  padding: 40px 0;
+}
+section .about-text .about-tabs .tab-content .timeline {
+  position: relative;
+}
+section .about-text .about-tabs .tab-content .timeline::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  top: 0;
+  left: 5px;
+  background-color: #e02f6b;
+}
+section .about-text .about-tabs .tab-content .timeline .timeline-item {
+  margin-bottom: 30px;
+  position: relative;
+  padding: 10px 0 0 40px;
+}
+section .about-text .about-tabs .tab-content .timeline .timeline-item:last-child {
+  margin-bottom: 0;
+}
+section .about-text .about-tabs .tab-content .timeline .timeline-item::before {
+  content: "";
+  position: absolute;
+  height: 11px;
+  width: 11px;
+  background-color: #e02f6b;
+  border-radius: 50%;
+  left: 0;
+}
+section .about-text .about-tabs .tab-content .timeline .timeline-item .date {
+  display: block;
+  color: #e02f6b;
+  font-weight: 400;
+  margin: 0 0 10px;
+}
+section .about-text .about-tabs .tab-content .timeline .timeline-item h4 {
+  font-size: 18px;
+  text-transform: capitalize;
+  margin: 0 0 10px;
+}
+section .about-text .about-tabs .tab-content .timeline .timeline-item h4 span {
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */
